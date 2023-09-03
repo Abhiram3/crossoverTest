@@ -1,0 +1,11 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 1
+      arrivalRate: 5000
+scenarios:
+  - flow:
+      - post:
+          url: "/charge"
+          json:
+            charges: 1
